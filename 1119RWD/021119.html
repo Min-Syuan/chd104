@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrap {
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap; /*檢查有沒有算錯*/
+            margin:auto;
+            outline: 1px solid olivedrab;
+
+
+        }
+        .box {
+            height: 200px;
+            background-color: rgb(217, 153, 75);
+            font-size: 60px;
+            color: aliceblue;
+            width: calc(100%/2 - 15px*2);/*減號前面一訂要加空格，不然會被視為負值*/
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>margin不會隨畫面伸縮改變的方法</h1>
+    <div class="wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+</body>
+</html>

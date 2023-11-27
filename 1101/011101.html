@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title> <!--以改網頁名稱-->
+</head>
+<body>
+    <a href="javascript:window.alert('大家好')">點選</a> <!--javascript也可以寫在<a>標籤-->
+    <script>
+        document.write("Hello, world", "<br>" ); //document是文件物件
+        document.title ="Hello, world" //也可以改網頁名稱
+/*==================================================================================*/
+        //變數
+        var name="Annie", age=24; 
+
+        document.write(name, "<br>");
+        document.write(age, "<br>");
+
+        document.write("Name: " , name , "<br>");
+        document.write("Age: " , age , "<br>");
+/*====================================================================================*/
+       //資料型別
+        document.write("true: ", true, "<br>");
+        document.write("false: ", false, "<br>");
+        document.write("undefined: ", undefined, "<br>");
+        document.write("null: ", null, "<br>");
+/*=====================================================================================*/
+       //字串
+        var zone="中壢區";
+        var road="復興路46號";
+        var address=zone + road;
+        document.write("Address:", address, "<br>");
+/*======================================================================================*/
+        //比較
+         document.write("10>4: ", 10>4, "<br>");
+         document.write("10<=4: ", 10<=4, "<br>");
+
+         document.write("0===false: ", 0===false, "<br>");
+         document.write("0==false: ", 0==false, "<br>");
+         document.write("NaN===NaN: ", NaN===NaN, "<br>");
+/*======================================================================================*/
+        //運算子
+         document.write("10>4 && 10<6: ", 10>4 && 10<6, "<br>" );
+         document.write("10>4 || 10<6: ", 10>4 || 10<6, "<br>" );
+         document.write("!10>4: ", !10>4, "<br>" ); //false Why? !碰到第一個數值就會開始運算，所以false>4==>0>4 (false)
+         document.write("!2>4: ", !2>4, "<br>"); //false Why? 同上，false>4==>0>4 (false)
+         document.write("!2>4: ", !(2>4), "<br>");
+/*=====================================================================================*/ 
+        //指定運算 += / -= / *= / /= / i++ / i--
+        //X+=Y=>X=X+Y
+        //i++=>i=i+1
+        //i--=>i=i-1
+/*==================================================================================*/    
+        var mm=10, nn=10, kk=10;
+        mm=nn=kk=1000;
+        document.write("mm: ", mm, "<br>");
+        document.write("nn: ", nn, "<br>");
+        document.write("kk: ", kk, "<br>");
+/*==================================================================================*/   
+        //++在前
+        var X= 10;
+        var Y= ++X + 5; //先遞增再繼續後續運算
+        document.write("Y: ", Y, "<br>");
+        //++在後
+        var X= 10;
+        var Y= X++ + 5; //只有X遞增(後面運算才會用到)，Y要用舊的X運算
+        document.write("Y: ", Y, "<br>");
+        var a=10;
+        b=++a + ++a;
+        document.write("b: ", b, "<br>");
+        var a=10;
+        b=a++ + a++;
+        document.write("b: ", b, "<br>");
+    </script>
+</body>
+</html>

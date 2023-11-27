@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link a{
+        position: block;
+    }
+    </style>
+</head>
+<body>
+    <img src="AA.jpg" width="495px" alt="cat">
+    <img src="pic/BB.jpg" width="450px" height="315px" alt="scenery">
+    <!--若是在不同資料夾中要資料夾/檔案名稱-->
+    <img src="../photo/CC.jpg" height="300px"alt="flower"> <!--../等於跳出workspace-->
+    <img src="https://i2.wp.com/www.spaceadvisor.com/blog/wp-content/uploads/2018/08/animal-corgi-dog-58997.jpg?fit=2048%2C1365&ssl=1" width="450px" alt="dog">
+    <!--直接放網址叫絕對路徑(一定要伺服器模式才能看到圖片)-->
+    <div class="link">
+        <a href="pic/DD.jpg">點選</a>
+    </div>
+
+    <figure>
+        <img src="EE.jpg" alt="貓">
+        <figcaption>This is a cute orange cat.</figcaption>
+    </figure> <!--alt -> 圖片掛掉才會跑出來，figcaption -> 依撰寫順序顯示在圖片上方或下方-->
+
+    <table border="3" width="400">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>數學</th>
+                <th>國文</th>
+                <!--th是標題處存格，會粗體置中-->
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th>小明</th>
+                <td>資料</td>
+                <td>資料</td>
+            </tr>
+            <tr>
+                <th>小美</th>
+                <td>資料</td>
+                <td>資料</td>
+            </tr>
+            <tr>
+                <th>小華</th>
+                <td>資料</td>
+                <td>資料</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>平均</th>
+                <!--<td>資料1</td>-->
+                <td colspan="2">資料2</td> <!--colspan左右跨欄置中-->
+            </tr>
+            <tr>
+                <th>平均</th>
+                <td rowspan="2">資料3</td>
+                <!--rowspan上下跨欄置中-->
+                <td>資料4</td>
+            </tr>
+            <tr>
+                <th>平均</th>
+                <!--<td>資料5</td>-->
+                <td>資料6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</html>

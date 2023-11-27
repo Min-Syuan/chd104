@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style type="text/css">
+        .header{
+            display: flex;
+            padding: 6px 10px;
+            background-color: #000;
+        }
+        .header nav{
+            text-align: right; 
+            width: 100%;
+            font-size: 0; /*讓字中間沒有間距，從連結中設定回來*/
+        }
+        .header nav a{
+            display: inline-block;
+            line-height: 52px; /*圖片40+上下各6，相加可置中*/
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px; /*連結左右間距*/
+        }
+        .header nav a:hover{
+            background-color: #fa0; /*游標滑過會變顏色*/
+        }
+        .header .logo{
+            display: inline-block;
+            padding: 6px 0;
+        }
+        .banner img{
+            width: 100%; /*SOS*/
+        }
+        .path{
+            display: flex;
+        }
+        .path li{
+            padding: 6px 8px;
+            position: relative; /*SOS*/
+        }
+        .path li a{
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .path li + li::before{
+            content:'/';
+            color: #aaa;
+            position: absolute; /*SOS*/
+            left: 0;
+        } /*SOS*/
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="#" class="logo"><img src="https://fakeimg.pl/80x40/" alt="網站名稱"></a> <!--img: logo/ 點logo會回到首頁+首頁超連結-->
+        <nav>
+            <a href="#">關於我們</a>
+            <a href="#">最新消息</a>
+            <a href="#">產品</a>
+            <a href="#">服務</a>
+            <a href="#">聯絡我們</a>
+            <a href="#">網站地圖</a>
+        </nav> <!--選單-->
+</div> <!--選單通常會在滿版的區塊中-->
+
+<div class="banner"></div> <!--滿版內容區-->
+    <img src="https://picsum.photos/id/1/1200/300">
+
+<ul class="path">
+    <li><a href="">首頁</a></li>
+    <li><a href="">最新消息</a></li>
+    <li><a href="">首頁</a></li>
+</ul> <!--麵包屑路徑-->
+
+<div class="about">
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/id/1/50/50" alt="">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto ullam, doloribus doloremque, laborum tempore illum ratione in reprehenderit quae accusantium porro sed earum rem eius veniam optio modi hic!</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/id/1/50/50" alt="">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto ullam, doloribus doloremque, laborum tempore illum ratione in reprehenderit quae accusantium porro sed earum rem eius veniam optio modi hic!</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/id/1/50/50" alt="">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto ullam, doloribus doloremque, laborum tempore illum ratione in reprehenderit quae accusantium porro sed earum rem eius veniam optio modi hic!</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

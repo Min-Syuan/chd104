@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: bisque;
+            width: 300px;
+            height: 200px;
+            overflow: hidden; /*超過範圍會隱藏*/
+        }
+        .box img {
+            vertical-align: center; /*沒設定圖片會對齊baseline，下面會多一塊*/
+            scale: 1;
+        }
+        .box:hover img {
+            scale: 1.4;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://picsum.photos/300/200/?random=10">
+    </div>
+</body>
+</html>

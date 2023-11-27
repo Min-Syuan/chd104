@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            --size:300px/*--自訂屬性*/
+        }
+        .box {
+            --size: 500px;
+            width: var(--size); /*變數函式*/
+            height: var(--size);
+            background-color: greenyellow;
+            
+        }
+        .box2 {
+            width: var(--size); 
+            height: var(--size);
+            background-color: rgb(130, 47, 255);
+            margin-top: 10px;
+            /*子層可以取得父層屬性，父層不能取得子層屬性*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>自訂屬性+變數函式</h1>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

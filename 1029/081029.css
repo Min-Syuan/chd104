@@ -1,0 +1,33 @@
+h1 {
+    color:brown;
+}
+p {
+    color:black;
+}
+#information{
+    color: burlywood;
+}
+.info {
+    color: gray;
+}
+.XX {
+    color: darkkhaki;
+}
+
+/*div {
+    color:forestgreen;
+}
+div.box{
+    color: black;
+}*/
+
+div:not(.box) {
+    color: forestgreen;
+} /*這個寫法比上面好*/
+
+p:first-child {
+    background-color: red;
+} /*無作用，因為child是看子物件順序，first-child是h1不是p，所以沒作用*/
+p:first-of-type{
+    background-color: black;
+} /*有作用，意思是p type中第一個*/

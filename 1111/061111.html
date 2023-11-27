@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            /*width: 1000px;*/
+            height: 500px;
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: aquamarine;
+        }
+        .content {
+            width: 0;
+            flex-grow: 1;
+            background-color: rgb(211, 211, 135);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sidebar"></div>
+        <div class="content"></div>
+        <div class="sidebar"></div>
+    </div>
+</body>
+</html>

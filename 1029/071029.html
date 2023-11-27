@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav> <!--較簡潔但沒有擴充彈性-->
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </nav>
+
+    <nav> <!--清單式寫法可以做子選單-->
+        <ul>
+            <li>
+                <a href="">link</a>
+                <ul>
+                    <li><a href="">sub link</a></li>
+                    <li><a href="">sub link</a></li>
+                    <li><a href="">sub link</a></li>
+                </ul> <!--子選單-->
+            </li>
+            <li>
+                <a href="">link</a>
+            </li>
+            <li>
+                <a href="">link</a>
+            </li>
+        </ul>
+    </nav>
+<!--=======================================================================-->
+    <form action="">
+        <input type="text">
+        <br>
+        <input type="password">
+        <br>
+        <input type="email">
+    </form>
+
+    <form action="">
+        <div> <!--第一種用法:要點到輸入欄-->
+            <label for="">姓名</label>
+            <input type="text">
+        </div>
+        <div> <!--第二種用法:點姓名也會跳到輸入-->
+            <label for="name">
+                姓名
+                <input id="name" type="text">
+            </label>
+        </div>
+    </form>
+
+    <form action="">
+        <div>
+            <label for="OOXX">
+                <input id="OOXX" type="radio">
+                男
+            </label>
+        </div>
+        <div> <!--name 設定相同會變單選-->
+            性別:
+            <label>
+                <input type="radio" name="sex">
+                男
+            </label>
+            <label>
+                <input type="radio" name="sex">
+                女
+            </label>
+            <label>
+                <input type="radio" name="sex">
+                不明
+            </label>
+        </div>
+    </form>
+</body>
+</html>

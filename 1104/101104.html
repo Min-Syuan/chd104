@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #fa0;
+            width: 200px;
+            height:100px;
+            rotate:20deg;
+            /*transform: rotate(20deg)*/
+        }
+        /*====================================*/
+        nav {
+            border-bottom: 1px solid #000;
+            background-color: aquamarine;
+        }
+        a {
+            display:inline-block;
+            color: #666;
+            font-size: 20px;
+            text-decoration: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            /*padding-bottom: 120px;*/
+        }
+        /*===========空白字元解決方式====================*/
+        div{
+            font-size: 0px; /*讓父承字大小為0*/
+        }
+        span{
+            font-size: 20px; /*一定要設定，不然會跟隨父承設定*/
+            background-color: #666;
+        }
+
+        /*============水平 align===================*/
+        .box {
+            border: 2px solid red;
+            margin-bottom: 20px;
+
+        }
+        .box * {
+            background-color: #fa0;
+            width: 200px;
+            font-size: 32px;
+        }
+        .box div {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        /*===========vertical-align====================*/
+        body {
+            font-size: 32px;
+        }
+        img {
+            vertical-align: middle; /*注意:不是 center*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae voluptatibus at, doloremque totam ipsum repellendus porro id ullam eum?</p>
+    
+    <!--================================-->
+    <nav>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+    </nav>
+
+    <!--================空白字元問題================-->
+    <div> <!--inline物件換行中間會有空白字元-->
+        <span>text</span>
+        <span>text</span>
+        <span>text</span>
+        <span>text</span>
+    </div>
+
+     <!--================水平 align================-->
+     <div class="box">
+        <div>div</div> <!--block-->
+     </div>
+
+     <div class="box">
+        <span>span</span> <!--inline-->
+     </div>
+
+     <!--================vertical-align================-->
+     <img src="http://fakeimg.pl/300x200/200">
+     Lorem ipsum dolor, sit amet consectetur
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<style>
+	h2{color:deeppink;}
+</style>
+</head>
+<body>
+<h2>使用sort()</h2>
+<script>
+var arr = [ 40, 20, 50, 70, 30, 80, 7]; //會先變成字串再比大小
+arr.sort();
+document.write( arr, "<br>");	
+</script>    
+
+<h2>自己排</h2>
+<script>
+var arr = [ 40, 20, 50, 70, 30, 80, 7];
+for (var i=0; i<arr.length;i++) {
+	for (var j=i+1; j<=6; j++) {
+		if(arr[i]>arr[j]) {
+			var temp=arr[i];
+			arr[i]=arr[j];
+			arr[j]=temp; //交換
+		}
+	}
+}
+
+document.write( arr, "<br>");
+</script>
+
+
+<h2>使用sort() 搭配compare function 遞增</h2>
+<script>
+	var arr = [ 40, 20, 50, 70, 30, 80, 7];
+	function compareAsc(a, b) {
+		return a-b;
+	}
+	arr.sort(compareAsc);
+	document.write( arr, "<br>");	
+</script>  
+
+<h2>使用sort() 搭配compare function 遞減</h2>
+<script>
+	var arr = [ 40, 20, 50, 70, 30, 80, 7];
+	function compareDesc(a, b) {
+		return b-a;
+	}
+	arr.sort(compareDesc);
+	document.write( arr.join(', '), "<br>");	
+</script>  
+
+<h2>字串比大小</h2>
+<script>
+	var sentences =[
+    "No cross,no crown.",
+    "Sometime ever, sometime never.",
+    "You don’t have time to be timid.",
+    "Treat yourself well.",
+    "No fear of words, no fear of years.",
+    "Don’t let the past steal your present.",
+    "Be cheerful and hopeful."
+    ];
+	sentences.sort();	
+	for (let i in sentences) {
+		document.write(sentences[i], "<br>")
+	}
+</script>
+
+
+<h2>字串比大小---按字數</h2>
+<script>
+	var sentences =[
+    "No cross,no crown.",
+    "Sometime ever, sometime never.",
+    "You don’t have time to be timid.",
+    "Treat yourself well.",
+    "No fear of words, no fear of years.",
+    "Don’t let the past steal your present.",
+    "Be cheerful and hopeful."
+    ];
+	
+	function shortToLong(str1, str2) {
+		return str1.length-str2.length;
+	}
+	
+	sentences.sort(shortToLong);
+	for (let i in sentences) {
+		document.write(sentences[i], "<br>")
+	};
+
+</script>
+
+<h2>array.forEach()</h2>
+<script>
+	function toHtml(data){ //data:11, 22,33
+		document.write(data,"<br>");
+	}
+	var arr=[11,22,33];
+	arr.forEach(toHtml);
+
+</script>
+
+<h2>array.map()</h2>
+<script>
+	function double(data){ //data:11, 22,33
+		return data*2; //22,44,66
+	}
+	var arr=[11,22,33];
+	var arr2=arr.map(double);
+
+	document.write(arr2);
+
+</script>
+
+<h2>array.filter()</h2>
+<script>
+
+	var prices=[660, 26, 450, 53, 1100, 265];
+
+	function lowerPrice(data) {
+		return data<500;
+	}
+	var prices2=prices.filter(lowerPrice);
+	document.write(prices2);
+
+
+</script>
+
+</body>
+</html>

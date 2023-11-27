@@ -1,0 +1,211 @@
+
+.coupon {
+    text-align: center;
+    font-size: 16px;
+    background-color: #CEB9A4;
+    padding: 6px;
+    color: white;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    z-index: 999;
+
+}
+i {
+    padding-left: 10px;
+}
+.coupon a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding-left: 5px;
+}
+.coupon a:hover {
+    color: #867E7E;
+}
+.scroll-menu-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+    
+}
+.scroll-menu {
+    display: flex;
+    position: fixed;
+    top: 29px;
+    width: 1200px;
+    height: 100px;
+    background-color: white; 
+    justify-content: space-between;
+    z-index: 9999;
+    
+}
+.scroll-menu img {
+    display: block;
+    padding: 0 10px 10px 10px; 
+}
+.scroll-menu .list {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.scroll-menu nav ul {
+    display: inline-block;
+    margin-left: 10px;
+}
+.scroll-menu ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+.scroll-menu .list a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #504d4d;
+}
+.scroll-menu .icon{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+.icon i{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+.row {
+    box-sizing: border-box;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    
+}
+.card {
+    width: 320px;
+    height: 450px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.card img {
+    display: block;
+    
+    width: 242px;
+    height: 280px;
+}
+.card img.small {
+    position: absolute;
+    width: 130px;
+    height: 170px;
+    top: 150px;
+    left: 180px;
+}
+.card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;
+    color: #504d4d;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Noto Serif TC', serif;
+}
+.card p {
+    text-align: center;
+    color: #504d4d;
+    font-size: 20px;
+}
+
+.card span.old {
+    text-decoration: line-through;
+    padding-right: 20px;
+    color: #797373;
+}
+.footer {
+    background-color: #CEB9A4;
+    position: relative;
+    margin-top: 60px;
+    width: auto;
+}
+.footer h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer a{
+    color: rgb(102, 99, 99);
+}
+.footer a:hover{
+    color: white
+}
+.footer-container {
+    width: auto;
+    height: 350px;
+    background-color: #CEB9A4;
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    align-items: center;
+    line-height: 30px;
+    font-family: 'Noto Serif TC', serif;
+    color: rgb(102, 99, 99);
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.subscribe {
+    width: 35%;
+    height: 230px;
+}
+.subscribe input::placeholder{
+    font-family: 'Noto Serif TC', serif;
+}
+.about-follow{
+    width: 20%;
+    height: 230px;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+.about-us{
+    padding-bottom: 20px;
+}
+.about-us a{
+    text-decoration: none;
+}
+
+.follow{
+    padding-top: 20px;
+}
+.follow i{
+    font-size: 30px;
+}
+
+.service{
+    width: 20%;
+    height: 230px;
+}
+.service a {
+    text-decoration: none;
+}
+.contact{
+    width: 20%;
+    height: 230px;
+    padding-left: 20px;
+}
+.copy-right {
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(102, 99, 99);
+    font-size: 14px;
+}

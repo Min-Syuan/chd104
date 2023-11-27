@@ -1,0 +1,71 @@
+.body {
+    position: relative;
+}
+.coupon {
+    text-align: center;
+    font-size: 16px;
+    background-color: #CEB9A4;
+    padding: 6px;
+    color: white;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    z-index: 999;
+
+}
+i {
+    padding-left: 10px;
+}
+.coupon a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding-left: 5px;
+}
+.coupon a:hover {
+    color: #867E7E;
+}
+.header {
+    background-image: url(../照片/pexels-thevibrantmachine-3066868\ 1.png);
+    background-size: cover;
+    height: 950px;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.header .list .icon {
+    display: flex;
+    align-items: center;
+
+}
+.header .list {
+    display: flex;
+    margin-top: 30px;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+}
+.header .list div {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+.list .logo {
+    margin: auto;
+}
+
+.header .list nav ul li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.header .list nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif; 
+}
+.banner img {
+    width: 100%; 
+}

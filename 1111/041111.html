@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 600px;
+            height: 600px;
+            border: 2px solid red;
+            display: flex;
+            gap: 2px; /*也有colum-gap*/
+            flex-direction: row;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: orange;    
+            flex-basis: 100px; /*順主軸方向改變長寬*/
+        }
+        .item:nth-child(3) {
+            flex: g s b;
+            flex: 0 1 0;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px; /*上下間格*/
+            max-width: 1440px;
+            margin: auto;
+
+        }
+        .wrap .box {
+            --colum-count:1;
+            width: calc(100% / var(--colum-count));
+            padding: 0 10px;
+            box-sizing: border-box; /*用這個可不用算width跟padding有沒有超過大小*/
+        }
+        .card {
+            height: 100px;
+            background-color: darkcyan;
+        }
+        @media screen and (min-width: 768px) {
+            .wrap .box{
+                --colum-count: 3;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .wrap .box{
+                --colum-count: 4;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .wrap .box{
+                --colum-count: 5;
+            }
+        }
+        @media screen and (min-width: 1440px) {
+            .wrap .box{
+                --colum-count: 6;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+        <div class="box">
+            <div class="card"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

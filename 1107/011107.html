@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<style>
+	h2{
+		color:deeppink;
+	}
+</style>
+</head>
+
+<body>
+<h2>自動轉型, 危險的案例~</h2>
+<script>
+var price = 20;
+var quantity = 30;
+var ship = "80";
+
+var subTotal = price * quantity; //20*30 ==> 600
+var total = subTotal + ship; //600 + "80"==>"600" + "80" ==>60080
+
+document.write( "subTotal : ", subTotal, "<br>"); 
+document.write( "total : ", total, "<br>"); 
+</script>  
+
+
+<h2>parseInt()</h2>
+<script>
+var num = "321abc";
+document.write( "parseInt(num) : ", parseInt(num),"<br>");  //321
+document.write( "parseInt(num, 8) : ", parseInt(num,8),"<br>");  //0321 ==>209
+document.write( "parseInt(num, 16) : ", parseInt(num,16), "<br>"); //3283644
+document.write( "parseInt(num, 2) : ", parseInt(num,2), "<br>"); //NaN
+num = "123abc";
+document.write( "parseInt(num, 2) : ", parseInt(num, 2), "<br>"); //1
+</script> 
+
+
+<h2>parseFloat()</h2>
+<script>
+var num = "3.21";
+//parseFloat() : 若帶有小數點， 小數會保留
+document.write( "parseInt(num) : ", parseInt(num), "<br>");  //3
+document.write( "parseFloat(num) : ", parseFloat(num), "<br>");//3.21
+</script> 
+
+
+<h2>強制轉型, 較安全的做法~</h2>
+<script>
+var price = parseInt("20");
+var quantity = parseInt("30");
+var ship = parseInt("80");
+
+var subTotal = price * quantity;  //
+var total = subTotal + ship;  //
+
+document.write( "subTotal : ", subTotal, "<br>"); 
+document.write( "total : ", total, "<br>"); 
+</script>
+
+<h2>falsy</h2>
+<script>
+var data = "0"; //數字零(0, -0), 空字串('',"",``), null, undefined, NaN
+document.write( "data : ", data, "<br>"); 
+document.write( "to boolean : ", new Boolean(data), "<br>"); 
+</script>  
+
+<h2>單元 + 轉數值</h2>
+<script>
+	var price = "100";
+	document.write( "typeof price : ", typeof price, "<br>");
+	document.write( "typeof +price : ", typeof +price, "<br>");
+</script>
+
+
+<h2>使用!! 來轉成布林值-------1</h2>
+<script>
+	//------------可以使用 !!來將字串轉成布林值
+	var errMsg = "email未填"; 
+	document.write( "typeof errMsg : ", typeof errMsg, "<br>"); //string
+	errMsg = !!errMsg; //可以使用!!來轉成布林值, !(! errMsg)=>! (!true)=>! (false) =>true
+	document.write( "typeof !!err : ", typeof err, "<br>");
+</script>
+
+
+<h2>使用!! 來轉成布林值---------2</h2>
+<script>
+	//------------可以使用 !!來將字串轉成布林值
+	var errMsg = ""; 
+	document.write( "typeof errMsg : ", typeof errMsg, "<br>"); //string
+	errMsg = !!errMsg; //可以使用!!來轉成布林值, !(! errMsg)=>! (!false)=>! (true) =>false
+	document.write( "typeof !!err : ", typeof err, "<br>");
+</script>
+
+<script>
+	var x = "123"; //string
+	x = parseInt(x);//轉成整數
+
+	var y = "123"; //string
+	y = !!y; //轉成boolean:true
+
+	var z = ""; //string
+	z = !!z; //轉成boole:false
+</script>
+</body>
+</html>

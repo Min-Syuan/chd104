@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .Elhilo{
+            width: 300px;
+            height: 400px;
+            background-color: #aaa;
+            position: fixed; /*會自己獨立一層，下滑也會停留在原本位置，可以做蓋板廣告*/
+            opacity: 0.6; /*半透明*/
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+    <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+    <div class="Elhilo">El hilo</div>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  <p>Cada viernes, encuentra en tu correo contenido adicional sobre el episodio semanal de El hilo, noticias de los hechos que marcan el pulso del continente y lo mejor del periodismo de nuestra región.</p>
+  </body>
+</html>

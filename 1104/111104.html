@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*=============flex====================*/
+        .wrap {
+        width: 500px;
+        height: 500px;
+        border: 1px solid red;
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        }
+        .box {
+            font-size: 32px;
+            width: 200px;
+            height: 120px;
+            background-color: orange;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!--========================flex========================-->
+    <div class="wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <!--不管inline或block只要父層設定{display: flex}就都能設定寬高-->
+    <span class="wrap">
+        <span class="box">1</span>
+        <span class="box">2</span>
+        <span class="box">3</span>
+    </span>  
+</body>
+</html>
